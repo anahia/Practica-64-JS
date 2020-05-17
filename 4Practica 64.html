@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 64-->
+
+<head>
+    <title>Practica 64</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div style="width:400px;height:400px;background:red" id="pag">
+    </div>
+
+    <script>
+        addEventListener('DOMContentLoaded', start, false);
+
+        function start() {
+            document.getElementById('pag').addEventListener('mousedown', push1, false);
+            document.getElementById('pag').addEventListener('mouseup', push2, false);
+        }
+
+        function push1() {
+            document.getElementById('pag').style.backgroundColor = '#ffff00';
+        }
+
+        function push2() {
+            document.getElementById('pag').style.backgroundColor = '#ff0000';
+        }
+    </script>
+
+</body>
+
+</html>
